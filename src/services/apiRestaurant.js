@@ -15,7 +15,7 @@ export async function getOrder(id) {
   const res = await fetch(`${API_URL}/order/${id}`);
   if (!res.ok) throw Error(`Order #${id} was not found`);
 
-  const { data } = res.json();
+  const { data } = await res.json();
   return data;
 }
 
