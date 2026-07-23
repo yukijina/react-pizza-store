@@ -33,8 +33,8 @@ function Cart() {
       <h2>Your cart, %NAME%</h2>
 
       <div>
-        <Button to="/order/new" Order pizza></Button>
         {/* <Link to="/order/new">Order pizza</Link> */}
+        <Button to="/order/new">Order pizza</Button>
         <button>Clear Cart</button>
       </div>
     </div>
