@@ -88,7 +88,7 @@ function CreateOrder() {
           {/* This is invisible. Added this because we want to send data when the form is submitted */}
           <input type="hidden" name="cart" value={JSON.stringify(cart)} />
 
-          <Button disabled={isSubmitting}>
+          <Button disabled={isSubmitting} type="primary">
             {isSubmitting ? "Placing order..." : "Order now"}
           </Button>
         </div>
