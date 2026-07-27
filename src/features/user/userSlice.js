@@ -40,7 +40,7 @@ const userSlice = createSlice({
     },
   },
 });
-console.log(userSlice);
+// console.log(userSlice);
 
 // destructure actions
 export const { updateName } = userSlice.actions;
