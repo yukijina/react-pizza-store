@@ -55,9 +55,11 @@ export const {
 
 export default cartSlice.reducer;
 
-// react recommend this function in slice
+// react recommend this function in slice, rather than directly add function in useSelector in the Cart component
 export const getTotalCartQuantity = (state) =>
   state.cart.cart.reduce((sum, item) => sum + item.quantity, 0);
 
 export const getTotalCartPrice = (state) =>
   state.cart.cart.reduce((sum, item) => sum + item.totalPrice, 0);
+
+export const getCart = (state) => state.cart.cart;
